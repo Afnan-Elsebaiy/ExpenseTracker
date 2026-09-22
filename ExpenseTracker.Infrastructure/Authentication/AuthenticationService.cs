@@ -11,16 +11,14 @@ namespace ExpenseTracker.Infrastructure.Authentication;
 public class AuthenticationService : IAuthenticationService
 {
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly SignInManager<ApplicationUser> _signInManager;
+    //private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly IJwtProvider _jwtProvider;
 
     public AuthenticationService(
         UserManager<ApplicationUser> userManager,
-        SignInManager<ApplicationUser> signInManager,
         IJwtProvider jwtProvider)
     {
         _userManager = userManager;
-        _signInManager = signInManager;
         _jwtProvider = jwtProvider;
     }
 

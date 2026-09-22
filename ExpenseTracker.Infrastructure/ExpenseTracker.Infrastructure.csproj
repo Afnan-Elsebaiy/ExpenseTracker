@@ -14,7 +14,6 @@
   <ItemGroup>
     <Folder Include="Identity\Seed\" />
     <Folder Include="Services\" />
-    <Folder Include="Persistence\Migrations\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
